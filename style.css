@@ -2,6 +2,12 @@
     margin: 0%;
     padding: 0%;
 }
+@media only screen and (max-width: 600px) {
+  /* styles for screens smaller than 600px */
+  .layered-card__content {
+    font-size: 14px;
+  }
+}
 
 body {
     font-family: Hack, monospace;
