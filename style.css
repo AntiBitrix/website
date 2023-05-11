@@ -1,164 +1,63 @@
-* {
-    margin: 0%;
-    padding: 0%;
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-        height: auto;
-    }
-    .layered-card__content {
-        font-size: 14px;
-    }
-    .three-dimensions-card {
-        width: 100%;
-        left: 0;
-    }
-    a:link {
-        font-size: 16px;
-        top: 1rem;
-        left: 1rem;
-    }
-    .layered-card {
-        top: 2rem;
-        left: 1rem;
-        height: auto;
-        width: 90%;
-    }
-    .Email {
-        width: 90%;
-        margin: 2rem auto;
-    }
-    .Social-icon {
-        position: relative;
-        left: 1rem;
-        color: grey;
-    }
-}
-
 body {
-    font-family: Hack, monospace;
-    height: 50vh;
-    background: linear-gradient(to right, #101111 0%, #101111 50%, #ebebeb 50%, #ebebeb 100%);
+  background-color: #0E1111;
+  text-align: center;
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.img-logo {
-    position: absolute;
-    top: 50%;
-    left: 11%;
-    transform: translateY(-50%);
+h1 {
+  font-size: 2em;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
 }
 
-:root {
-    --three-dimensions-card-left-side-width: 1rem;
+h2 {
+  font-size: 1.5em;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 0 20px;
+  border-bottom: 1px solid white;
 }
 
-.three-dimensions-card {
-    position: relative;
+h2::after {
+  content: "!";
+  font-size: 3em;
+  color: red;
+  margin-left: 10px;
 }
 
-/* The left side */
-.three-dimensions-card::before {
-    background: whitesmoke;
-    content: '';
-    /* Position */
-    top: var(--three-dimensions-card-left-side-width);
-    left: 0px;
-    position: absolute;
-    transform: translate(-100%, 0) skewY(-45deg);
-    transform-origin: left top;
-    /* Size */
-    height: 100%;
-    width: var(--three-dimensions-card-left-side-width);
+h2::first-letter {
+  font-size: 2em;
+  color: red;
 }
 
-/* The bottom side */
-.three-dimensions-card::after {
-    background: #c1c1c1;
-    content: '';
-    /* Position */
-    bottom: 0px;
-    left: 0px;
-    position: absolute;
-    transform: translate(0, 100%) skewX(-45deg);
-    transform-origin: left top;
-    /* Size */
-    height: var(--three-dimensions-card-left-side-width);
-    width: 100%;
+p {
+  font-size: 1em;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
 }
 
-.three-dimensions-card {
-    font-size: larger;
-    font-style: italic;
-    text-align: center;
-    width: 6%;
-    position: relative;
-    top: 10cm;
-    left: 30cm;
-    z-index: 500%;
+ul {
+  list-style-type: none;
 }
 
-a:link {
-    color: #aaaa;
-    background-color: transparent;
-    text-decoration: none;
-    font-size: large;
-    position: relative;
-    top: 14cm;
-    left: 30cm;
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  transition: all 0.3s;
 }
 
 a:hover {
-    color: gray;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-.layered-card {
-    position: relative;
-    top: 12cm;
-    left: 30cm;
-    /* Demo */
-    height: 4cm;
-    width: 16cm;
-}
-
-/* Mobile Styles */
-@media only screen and (max-width: 600px) {
-
-  .layered-card::before {
-    background: #d1d5db;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: none;
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-  }
-
-  .layered-card__content {
-    position: relative;
-    height: auto;
-    width: 100%;
-    z-index: 1;
-    background: #fff;
-  }
-
-  .Email {
-    position: relative;
-    top: 0;
-    border: 2px solid #333;
-    box-shadow: 0px 0px 5px #333;
-    padding: 0px;
-    width: 100%;
-  }
-
-  .Social-icon {
-    position: relative;
-    left: 0;
-    color: grey;
-    margin-top: 10px;
-  }
+  color: red;
+  border-color: red;
 }
