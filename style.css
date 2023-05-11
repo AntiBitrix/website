@@ -40,6 +40,26 @@ p {
   padding: 10px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h2, p, ul {
+  margin: 20px;
+}
+
+ul {
+  padding: 0;
+}
+
+.social-links {
+  margin-top: 40px;
+}
+
 ul {
   list-style-type: none;
 }
