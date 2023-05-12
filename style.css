@@ -173,12 +173,10 @@ body {
   background-color: white;
 }
 
-/* Remove border radius */
 .social-icons a:not(:last-child) {
   border-radius: 0;
 }
 
-/* Remove unwanted lines */
 .social-icons a:before {
   content: "";
   display: none;
